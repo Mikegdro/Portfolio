@@ -6,4 +6,4 @@ services:
     ports:
       - "8080:5173"
     working_dir: /home/node/app
-    command: npm run dev -- --host 0.0.0.0
+    command: sh -c "npm rebuild esbuild && npm run dev -- --host 0.0.0.0"
